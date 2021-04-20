@@ -1,0 +1,10 @@
+create table Details(email varchar(50), username varchar(50), password varchar(50));
+select * from Details;
+insert into Details values('ashwithjason@gmail.com','Ashwith','Ashwith@123');
+drop table Details;
+
+create table Adminn(email varchar(50), username varchar(50), password varchar(50));
+insert into Adminn values('josh@gmail.com','Joshey','Josh@123');
+insert into Adminn values('merlin@gmail.com','Merlin','Merlin@123');
+insert into Adminn values('candy@gmail.com','Candice','Candy@123');
+select * from Adminn;

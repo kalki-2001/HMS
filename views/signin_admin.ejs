@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>ADMIN SIGN IN !</title>
+</head>
+<link rel="stylesheet" href="../css/signin.css">
+<body>
+  <div class="content">
+    <h1>ADMIN SIGN IN PAGE</h1>
+  </div>
+  
+  <form action="http://localhost:4000/loginadmin" method="POST">
+    <div class="container">
+    <label for="email_ID"><b>EMAIL ID</b></label><br>
+    <input type="text" placeholder="Enter Email ID" name="email" required>
+	<br><br>
+    <label for="psw"><b>PASSWORD</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	<br><br>
+    <button type="submit">SIGN IN</button>
+  </div>
+	<br><br>
+  <% if(msg){ %>
+    <h1><%=msg%></h1>
+    <% } %>
+    <br><br>
+  <div class="container" style="background-color:#90A4AE">
+    <button type="button" class="cancelbtn"><a href="../html/final.html">CANCEL</a></button>
+  </div>
+</form>
+</body>
+</html>
